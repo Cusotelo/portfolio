@@ -5,6 +5,7 @@ import { heroSectionType } from "./sections/heroSection";
 import { terminalSectionType } from "./sections/terminalSection";
 import { projectsSectionType } from "./sections/projectsSection";
 import { postsSectionType } from "./sections/postsSection";
+import { resumeSectionType } from "./sections/resumeSection";
 
 export const schemaTypes: SchemaTypeDefinition[] = [
   pageType,
@@ -13,4 +14,5 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   terminalSectionType,
   projectsSectionType,
   postsSectionType,
+  resumeSectionType,
 ];

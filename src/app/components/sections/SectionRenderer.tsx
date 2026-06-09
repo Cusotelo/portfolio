@@ -2,6 +2,7 @@ import Hero from "@/app/components/Hero";
 import TerminalIntro from "@/app/components/TerminalIntro";
 import ProjectsSection from "./ProjectsSection";
 import PostsSection from "./PostsSection";
+import ResumeSection from "./ResumeSection";
 
 type Post = {
   _id: string;
@@ -60,6 +61,19 @@ export default function SectionRenderer({ sections, posts }: Props) {
                 key={section._key}
                 heading={section.heading}
                 posts={posts}
+              />
+            );
+
+          case "resumeSection":
+            return (
+              <ResumeSection
+                key={section._key}
+                heading={section.heading}
+                objective={section.objective}
+                experience={section.experience}
+                skillGroups={section.skillGroups}
+                toolGroups={section.toolGroups}
+                education={section.education}
               />
             );
 

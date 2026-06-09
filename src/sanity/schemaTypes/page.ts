@@ -15,6 +15,7 @@ export const pageType = defineType({
         { type: "terminalSection" },
         { type: "projectsSection" },
         { type: "postsSection" },
+        { type: "resumeSection" },
       ],
     }),
   ],
